@@ -1,0 +1,182 @@
+/* Fuentes Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico|Prociono');
+/* Usos de Fuentes */
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Prociono', serif;
+*/
+/* Header (h1 y h2): Pacifico */
+/* Otros Heading (h2 de Atricle): Gloria Hallelujah */
+/* Resto de letra (Texto general de Article): Prociono */
+
+/* Paleta elegida: */
+/* http://www.paletton.com/#uid=31o0u0kk7pLnhgHnRgMfXA3gqAm */
+
+/* Colores empleados...: */
+/* Color fondo header: #867322, #CDB64C, #6581B7 (Combinación con gradient)*/
+/* Color del box-shadow del header: #6380B8 */
+/* Color fondo nav: #3B5589 */
+/* Color fondo div contenedor de article: #FFE880; */
+/* Color fondo aside: #867322 */
+/* Color fondo a:link: #FFE880 */
+/* Color fondo a:hover: #6380B8 */
+/* Color fondo a:visited: #FFE77C */
+/* Color fondo a:active: #6A3889 */
+/* Color del box-shadow del a del aside: #CDB64C */
+/* Color letra h1 y h3 del header: #1F3259 */
+/* Color letra h2 de los article: #411B59 */
+
+body {
+    width: auto;
+    font-family: 'Prociono', serif;
+    font-size: 14px;
+}
+
+header {
+    overflow: hidden;
+    min-width: 1200px;
+    width: 100%;
+    position: fixed;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    text-align: center;
+    background: linear-gradient(#867322, #CDB64C, #6581B7);
+    border: 2px solid;
+    border-radius: 16%;
+    box-shadow: 30px 30px 20px #6380B8;
+}
+
+body > div {
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 178px;
+}
+
+nav {
+    background-color: #3B5589;
+    text-align: center;
+}
+
+div > div {
+    width: 70%;
+    background-color: #FFE880;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+aside {
+    background-color: #867322;
+    text-align: center;
+}
+
+footer {
+    width: 97%;
+    border: 20px solid;
+    border-image: url("../img/iconos/mundo.png");
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* -------------------------- Elementos del HEADER -------------------------------- */
+
+header img {
+    width: 260px;
+}
+
+header div {
+    float: left;
+    width: 60%;
+}
+
+header img:first-child {
+    float: left;
+}
+
+header img:last-child {
+    float: right;
+    padding-right: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #1F3259;
+}
+
+header h3 {
+    font-size: 1.2em;
+    color: #1F3259;
+}
+
+/* ---------------------------  Elementos del NAV y ASIDE --------------------------------- */
+
+article h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 24px;
+    color: #411B59;
+}
+
+article:nth-child(2) {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a:link {
+    background-color: #FFE880;
+}
+
+a:hover {
+    color: #6380B8;
+}
+
+a:visited {
+    background-color: #FFE77C;
+}
+
+a:active {
+    background-color: #6A3889;
+}
+
+aside > a {
+    box-shadow: 10px 10px 10px #CDB64C;
+}
+
+article img {
+    width: 240px;
+}
+
+p:first-child, p:nth-child(3) {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+p:first-child::first-letter, p:nth-child(3):first-letter {
+    font-size: 36px;
+}
+
+span::before {
+    content: " ** ";
+}
+
+span::after {
+    content: " ** ";
+}
+
+span:last-child::before {
+    content: " << ";
+}
+
+span:last-child::after {
+    content: " >> ";
+}
